@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia;
+}
+p{
+    color: brown;
+    color: red;
+    line-height: 30px;
+}
+h3{
+    color: black;
+}
+body{
+    text-align: center;
+}
+h4 a{
+    color: green;
+    text-decoration: none;
+}
+button{
+    color: blueviolet;
+    background-color: white;
+}
+textarea::placeholder{
+    color: #000000;
+}
+p span{
+    text-decoration: underline;
+}

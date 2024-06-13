@@ -1,0 +1,31 @@
+css=it is stand for cascading style sheet
+it is used to give  a stylish look to the web site or web page
+
+
+# how to add a css
+
+there are three ways to add a css
+1) inline style-adding a style directly to the each element 
+
+exp- <h1 style="color: red; background-color:blue">web development</h1>
+
+2) using <style> </style>tag-  adding a css by using style tag in a same document
+
+exp- <style>
+             h1{
+                color:red
+                background-color:black
+             }
+       
+    </style>
+
+3) external-stylesheet- writing a css in separate file and linking it with html document by using link tag
+
+exp-  <link rel="stylesheet"  href="style.css">
+
+here we using a two attribute in link tag
+
+rel-this specify the relation .i.e what type of sheet we are going to link
+href-it specify the source path of css
+
+note-link tag should be in head tad

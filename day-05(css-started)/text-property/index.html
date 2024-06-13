@@ -1,0 +1,60 @@
+#text property in css 
+
+we have folling text property
+
+1)text-align proerty-it allign the text left\right\center\justify with respect to the parent element( not the document) 
+and by default it allign from left
+
+2) font wright-when we have to sepcify the how much font should be light or bold then we use font weight property
+   it could be light/bold(700)/normal(400)
+   it has a renge 100-900
+
+   note-lighter and bolder use with respect the the outer element 
+   3)text decoration-it is used to set the appearence of decorative lines on text
+
+   text-decoration:underline
+   text-decoration:overline
+   text-decoration:line-through
+   text-decoration:line-none
+   text-decoration-style-solid/wavy/double/dotted/dashed
+   4)line-height-control the  height of the line of  text
+
+   line-height:normal(default)
+   line-height:you can set custom value
+
+   5)letter-spacing-controlling the horigontal spacing between the text of character
+
+   letter-spacing:normal(default)
+   letter-spacing:custom space set
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p{
+            text-align: left;
+            /* text-align: right;
+            text-align: center; */
+            color: black;
+            width: 50%;
+            border: solid 5px;
+
+        }
+         div{
+            text-align:justify ;
+        } 
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <p>hello</p>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. At vero unde ipsum veniam facere possimus laborum tempora doloribus in vitae quidem eius omnis, cupiditate velit harum, illum sapiente voluptates voluptatum.
+        Itaque dolore mollitia labore eaque quam saepe! Possimus excepturi repellendus natus eveniet assumenda soluta sunt voluptatem quaerat, cum in, ab, voluptas ullam amet consectetur nisi eum. Voluptas, accusantium illo? Vel?
+        Modi quo sint totam cupiditate qui ducimus vero animi ratione, unde aut. Impedit tempore pariatur magni assumenda animi? Aliquid fugiat ut voluptates amet quo debitis officia nemo sapiente, dicta culpa.
+        Sed itaque ipsam exercitationem soluta. Repudiandae nihil voluptates necessitatibus molestiae. Adipisci officiis iure unde corrupti fugiat eligendi ratione, facere nulla beatae nam reprehenderit, quam vitae nemo, nobis voluptatibus magnam quasi.
+    </div>
+</body>
+</html>
