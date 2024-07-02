@@ -1,0 +1,39 @@
+<!-- Radio buttons in HTML are used when you want the user to select one option from a set of predefined choices. Unlike 
+checkboxes, radio buttons are designed for single selections 
+within a group. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio button</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <p>Select your gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male"> Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female"> Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other"> Other</label><br>
+        <input type="submit" value="Submit">
+      </form>
+      
+</body>
+</html>
+
+
+<!-- expnanation 
+
+Radio Button Input Element (<input type="radio">):
+
+The type="radio" attribute specifies that the input element is a radio button.
+Each radio button has a name attribute, which in this example is "gender". 
+All radio buttons with the same name attribute belong to the same group, ensuring that only one option from 
+the group can be selected at a time.
+Each radio button also has a value attribute, which specifies the value that will be sent to the server
+ if that radio button is selected. -->

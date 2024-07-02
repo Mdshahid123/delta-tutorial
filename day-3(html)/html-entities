@@ -1,0 +1,58 @@
+HTML (HyperText Markup Language) entities are special codes used to display reserved characters or 
+symbols that are not easily typed on a keyboard. These entities are often used to ensure that special 
+characters are rendered correctly in web pages. Below are some common HTML entities and their uses:
+
+Commonly Used HTML Entities
+Reserved Characters
+
+& (ampersand): &amp;
+< (less than): &lt;
+> (greater than): &gt;
+" (double quote): &quot;
+' (single quote): &apos; or &#39;
+Non-breaking Space
+
+(space): &nbsp;
+Special Symbols
+
+© (copyright): &copy;
+® (registered trademark): &reg;
+™ (trademark): &trade;
+€ (euro): &euro;
+£ (pound sterling): &pound;
+¥ (yen): &yen;
+Mathematical Symbols
+
+± (plus-minus): &plusmn;
+÷ (division): &divide;
+× (multiplication): &times;
+≤ (less than or equal to): &le;
+≥ (greater than or equal to): &ge;
+Greek Letters
+
+α (alpha): &alpha;
+β (beta): &beta;
+γ (gamma): &gamma;
+δ (delta): &delta;
+
+Example Usage in HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities Example</title>
+</head>
+<body>
+    <p>This is an ampersand: &amp;</p>
+    <p>This is a less than sign: &lt;</p>
+    <p>This is a greater than sign: &gt;</p>
+    <p>This is a double quote: &quot;</p>
+    <p>This is a single quote: &apos;</p>
+    <p>This is a non-breaking space:&nbsp;in action.</p>
+    <p>Special characters: &copy;, &reg;, &trade;, &euro;, &pound;, &yen;</p>
+    <p>Mathematical symbols: &plusmn;, &divide;, &times;, &le;, &ge;</p>
+    <p>Greek letters: &alpha;, &beta;, &gamma;, &delta;</p>
+</body>
+</html>
