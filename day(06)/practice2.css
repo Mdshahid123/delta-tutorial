@@ -1,0 +1,17 @@
+/* for given html and css what will be the colour of h1  */
+
+/* <h1 id="greed" class="hello"> hellow</h1> */
+
+h1{
+    color: pink;
+}
+
+#greed{
+    color: yellow;
+}
+
+.myclass{
+    color:brown;
+}
+
+/* ans is yellow because priority order is id>class>name */

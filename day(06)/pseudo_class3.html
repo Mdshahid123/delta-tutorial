@@ -1,0 +1,72 @@
+<!-- what is the difference bwteween focus pseudo class and active class because in both case we have to click to change 
+ a state -->
+
+<!-- The :focus and :active pseudo-classes in CSS are similar in that they both relate to user interactions, but they
+erve different purposes and trigger under different circumstances:
+
+:focus Pseudo-class
+Purpose: The :focus pseudo-class is used to apply styles to an element that is currently focused, meaning 
+it is ready to receive input from the keyboard or other input devices.
+Trigger: It is triggered when an element gains focus. This can happen when the user clicks on an input field, uses the Tab key to navigate to it, or programmatically sets focus on it using JavaScript.
+Common Use Cases: Typically used for form elements (like input fields, textareas, and buttons) to indicate that
+they are active and ready to receive input
+
+example-
+
+input:focus {
+    border-color: blue;
+    background-color: lightyellow;
+} -->
+
+
+<!-- <input type="text" placeholder="Click or tab to focus on me"> -->
+
+
+<!-- :active Pseudo-class
+
+Purpose: The :active pseudo-class is used to apply styles to an element that is being activated by the user.
+This usually means the element is being clicked or pressed.
+
+trigger: It is triggered only while the element is being activated. For example, when a user presses down on a 
+button or a link and holds the mouse button down. Once the user releases the mouse button, the :active state is no
+longer applied.
+
+Common Use Cases: Often used for interactive elements like buttons and links to provide visual feedback when the
+element is pressed.
+
+
+button:active {
+    background-color: green;
+    color: white;
+}
+ -->
+
+<!-- example -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus and Active Pseudo-classes</title>
+    <style>
+        /* Focused input field */
+        input:focus {
+            border-color: blue;
+            background-color: lightyellow;
+        }
+
+        /* Active button */
+        button:active {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Focus and Active Pseudo-classes Demonstration</h1>
+    <input type="text" placeholder="Click or tab to focus on me">
+    <br><br>
+    <button>Click me</button>
+</body>
+</html>

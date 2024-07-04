@@ -1,0 +1,75 @@
+<!-- box_model -->
+
+ <!-- css box model treat looks at all the html elements as boxes  -->
+
+ <!-- The box model consists of several parts:
+
+Content: The actual content of the element, such as text or an image.
+
+Padding: The space between the content and the border. Padding is inside the element's border.
+
+Border: The border surrounding the padding (if any) and the content.
+
+Margin: The space outside the border. Margins are used to create space between elements. -->
+
+<!-- Visual Representation of the Box Model -->
+
+
+<!-- +-----------------------------+
+|          Margin             |
+|  +-----------------------+  |
+|  |        Border         |  |
+|  |  +-----------------+  |  |
+|  |  |     Padding     |  |  |
+|  |  |  +-----------+  |  |  |
+|  |  |  |  Content  |  |  |  |
+|  |  |  +-----------+  |  |  |
+|  |  +-----------------+  |  |
+|  +-----------------------+  |
++-----------------------------+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         .box {
+              width: 200px; 
+              height:100px;           /* Content width */
+              padding: 20px;          /*  Padding*/
+              border: 5px solid blue;   /* Border */
+              margin: 10px;   /* Margin */
+              box-sizing: content-box;
+         }   
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box with content.
+    </div>
+</body>
+</html>
+
+<!-- Box Model Calculations -->
+
+<!-- When you define width and height for an element, by default, it only includes the content box.
+To calculate the total width and height of the element, you need to add the padding, border, and margin:
+
+Total Width: width + padding-left + padding-right + border-left + border-right + margin-left
++ margin-right
+
+Total Height: height + padding-top + padding-bottom + border-top + border-bottom + margin-top
++ margin-bottom
+
+ -->
+
+
+ <!-- Box-Sizing Property -->
+
+<!-- To include padding and border in the element's total width and height, you can use the box-sizing 
+property:
+
+content-box (default): Width and height apply to the content box only.
+
+border-box: Width and height include content, padding, and border.
+ -->

@@ -1,0 +1,102 @@
+<!-- display property -->
+ <!-- css dispaly property is uesd to determine wheather the html element treated or  has to display
+  as a bolck or inline element. -->
+
+  <!-- display inline-it is used to make a html element inline
+
+  ->it takes only space required by its content 
+  ->no line break before and after 
+  ->so setting height and width not allowed
+  ->padding/border is allowed
+  ->margin are applied, but only horizontally.
+  ->margin top/bottom  not allowed -->
+  <!-- ->if we grow the sige of child elment then it will over flow the parent element .i.e size of parent 
+   elment is not grow with the grow the size of child elment -->
+   <!-- but if we increase the no of  child element then size of parent will grow as no of child increases -->
+
+  <!-- Common Inline Elements
+Some common HTML elements that are inline by default include:
+
+<span>
+<a>
+<strong>
+<em>
+<img> -->
+
+<!-- Example of display: inline
+Here’s an example to demonstrate how display: inline works: -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .inline-box {
+            display: inline;
+            padding: 10px;
+            border: 2px solid blue;
+            margin: 5px;
+            height:50px;
+            width:50px;
+            background-color: lightgray;
+        }
+        #outer{
+            
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+       <div class="inline-box">Box 1</div>
+       <div class="inline-box">Box 2</div>
+       <div class="inline-box">Box 3</div>
+       <div class="inline-box">Box 4</div>
+       <div class="inline-box">Box 5</div>
+       <div class="inline-box">Box 1</div>
+       <div class="inline-box">Box 2</div>
+       <div class="inline-box">Box 3</div>
+       <div class="inline-box">Box 4</div>
+       <div class="inline-box">Box 5</div>
+       <div class="inline-box">Box 1</div>
+       <div class="inline-box">Box 2</div>
+       <div class="inline-box">Box 3</div>
+       <div class="inline-box">Box 4</div>
+       <div class="inline-box">Box 5</div>
+       <div class="inline-box">Box 1</div>
+       <div class="inline-box">Box 2</div>
+       <div class="inline-box">Box 3</div>
+       <div class="inline-box">Box 4</div>
+       <div class="inline-box">Box 5</div>
+       <div class="inline-box">Box 1</div>
+       <div class="inline-box">Box 2</div>
+       <div class="inline-box">Box 3</div>
+       <div class="inline-box">Box 4</div>
+       <div class="inline-box">Box 5</div>
+       <div class="inline-box">Box 1</div>
+       <div class="inline-box">Box 2</div>
+       <div class="inline-box">Box 3</div>
+       <div class="inline-box">Box 4</div>
+       <div class="inline-box">Box 5</div>
+       <div class="inline-box">Box 1</div>
+       <div class="inline-box">Box 2</div>
+       <div class="inline-box">Box 3</div>
+       <div class="inline-box">Box 4</div>
+       <div class="inline-box">Box 5</div>
+       <div class="inline-box">Box 1</div>
+       <div class="inline-box">Box 2</div>
+       <div class="inline-box">Box 3</div>
+       <div class="inline-box">Box 4</div>
+       <div class="inline-box">Box 5</div>
+    </div>
+
+</body>
+</html>
+
+<!-- Visual Explanation
+In this example, the three div elements with the class .inline-box will be displayed inline, meaning they
+ will appear next to each other on the same line, as much as space allows. The padding, border, and 
+ margin are applied horizontally, but the elements will not respect the width and height properties if 
+ they were specified. -->

@@ -1,0 +1,8 @@
+/* id-selector-select an element based on value of element id attribute
+ note- id should be unique for each element
+
+exp- 
+
+#myid{
+    property:value;
+} */

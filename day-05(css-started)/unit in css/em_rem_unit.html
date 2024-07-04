@@ -1,0 +1,42 @@
+<!-- rem- we set dimention of any property  of child element relative to the font size of root element
+
+drawback of em -snowball effect in nested elements
+
+when we have a nested tag then outer tag is know as root tag -->
+
+<!-- em unit-relative to the font size of parent in the case of hypographical property
+ like font szie and relative to the font size of itself in case of proprties like width-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        section{
+            font-size: 30px;
+        }
+        div{
+            font-size: 4rem;
+            margin-left: 3rem;
+            background-color: aqua;
+        }
+    </style>
+    <title>rem unit</title>
+</head>
+<body>
+         <section >
+            hello
+            <div>
+                 div1
+                <div>
+                       div2
+                       <div>
+                             div3
+                       </div>
+                </div>
+            </div>
+         </section>
+
+</body>
+</html>

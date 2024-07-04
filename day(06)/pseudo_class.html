@@ -1,0 +1,97 @@
+ Pseudo-classes in CSS are keywords added to selectors that specify a special state of the selected elements.
+ They can be used to apply styles based on user interaction, document structure, or the state of an element. 
+ Here are some commonly used pseudo-classes:
+
+ User Interaction Pseudo-classes
+:hover: Applies when the user designates an element (with a pointing device), but does not activate it.
+
+a:hover {
+  color: red;
+}
+:focus: Applies while an element has focus (for example, when a user tabs to it or clicks on it).
+
+input:focus {
+  border-color: blue;
+}
+:active: Applies when an element is being activated by the user.
+
+button:active {
+  background-color: green;
+}
+Structural Pseudo-classes
+:first-child: Applies to the first child of a specified element.
+
+p:first-child {
+  font-weight: bold;
+}
+:last-child: Applies to the last child of a specified element.
+
+p:last-child {
+  color: gray;
+}
+:nth-child(n): Matches elements based on their position in a group of siblings.
+
+li:nth-child(2) {
+  background-color: yellow;
+}
+:nth-of-type(n): Matches elements based on their position among siblings of the same type.
+
+p:nth-of-type(3) {
+  font-size: 1.5em;
+}
+Form-related Pseudo-classes
+:checked: Applies to radio buttons or checkboxes that are checked.
+
+input:checked {
+  background-color: lightblue;
+}
+:disabled: Applies to form elements that are disabled.
+
+input:disabled {
+  background-color: lightgray;
+}
+:enabled: Applies to form elements that are enabled.
+
+input:enabled {
+  background-color: white;
+}
+Other Pseudo-classes
+:not(selector): Excludes elements that match the selector.
+
+p:not(.special) {
+  color: blue;
+}
+Example
+Here’s an example of using some of these pseudo-classes:
+
+
+/* Change link color on hover */
+a:hover {
+  color: red;
+}
+
+/* Style the first paragraph in a container */
+.container p:first-child {
+  font-weight: bold;
+}
+
+/* Style every odd row in a table */
+table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Style input fields that are focused */
+input:focus {
+  border-color: blue;
+}
+Pseudo-classes are a powerful feature in CSS, enabling more dynamic and responsive styling based on user interaction and 
+document structure.
+
+
+
+
+
+
+
+
+

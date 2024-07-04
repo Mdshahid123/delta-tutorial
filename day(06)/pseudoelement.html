@@ -1,0 +1,99 @@
+<!-- pseudo-element -->
+
+<!-- Pseudo-elements are a powerful feature in CSS that allow you to apply styles to specific parts of an element 
+without needing additional HTML markup. -->
+
+
+
+
+
+
+<!-- Common Pseudo-elements -->
+
+<!-- ::before and ::after: -->
+
+<!-- These pseudo-elements are used to insert content before or after the content of an element.
+They are often used to add cosmetic content to an element with the content property. -->
+
+<!-- p::before {
+    content: "Note: ";
+    color: red;
+    font-weight: bold;
+} -->
+
+<!-- p::after {
+    content: " Read more.";
+    color: blue;
+} -->
+
+<!-- <p>This is a paragraph.</p>
+This will render as: -->
+
+<!-- Note: This is a paragraph. Read more. -->
+
+<!-- ::first-line:
+
+This pseudo-element is used to apply styles to the first line of a block-level element.
+css
+Copy code
+p::first-line {
+    font-weight: bold;
+    color: green;
+} -->
+
+<!-- <p>This is a paragraph. The first line of this paragraph will be bold and green.</p> -->
+
+<!-- ::first-letter:
+
+This pseudo-element is used to apply styles to the first letter of the first line of a block-level element.
+
+p::first-letter {
+    font-size: 2em;
+    color: orange;
+}
+
+<p>This is a paragraph. The first letter of this paragraph will be larger and orange.</ -->
+
+
+    <!-- Here’s a full HTML document demonstrating the use of various pseudo-elements:    -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo-elements Example</title>
+        <style>
+            /* Insert content before and after a paragraph */
+            p::before {
+                content: "Note: ";
+                color: red;
+                font-weight: bold;
+            }
+    
+            p::after {
+                content: " Read more.";
+                color: blue;
+            }
+    
+            /* Style the first line of a paragraph */
+            .first-line-example::first-line {
+                font-weight: bold;
+                color: green;
+            }
+    
+            /* Style the first letter of a paragraph */
+            .first-letter-example::first-letter {
+                font-size: 2em;
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo-elements Demonstration</h1>
+        <p>This paragraph uses ::before and ::after pseudo-elements to add content before and after the main text.</p>
+        <p class="first-line-example">This paragraph uses the ::first-line pseudo-element. The first line of this paragraph will be bold and green.</p>
+        <p class="first-letter-example">This paragraph uses the ::first-letter pseudo-element. The first letter of this paragraph will be larger and orange.</p>
+    </body>
+    </html>
+       

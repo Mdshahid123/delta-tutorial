@@ -1,0 +1,42 @@
+<!-- display-block-it take full space available in width  and leaves newline before and after the
+  element -->
+
+<!-- size of parent is grow with sixe of child elment is grow .i.e child element is always grow 
+within the parent  element -->
+
+<!-- when we set the margin vertically then it will be set b/w child element and outside the parent
+  elment
+when we set he margin horigontally then it will be set b/w child element and parent elemnt 
+
+ -->
+<!-- right marign not allowed  in block elment-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .inline-box {
+            display:block ;
+            padding: 10px;
+            border: 2px solid blue;
+            margin: 5px;
+            height:50px;
+            width:50px;
+            background-color: lightgray;
+        }
+        #outer{
+            
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+       <div class="inline-box">Box 1</div>
+       
+    </div>
+
+</body>
+</html>

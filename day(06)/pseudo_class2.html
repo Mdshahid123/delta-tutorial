@@ -1,0 +1,88 @@
+<!-- pseudo-classes implementation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes Example</title>
+    <style>
+        /* Change link color on hover */
+        a:hover {
+            color: red;
+        }
+
+        /* Style the first paragraph in a container */
+        .container p:first-child {
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Style every odd item in a list */
+        ul li:nth-child(even) {
+             color: pink;
+        }
+
+        /* Style input fields that are focused */
+        input:focus {
+            border-color: green;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Classes Demonstration</h1>
+    <div class="container">
+        <p>This is the first paragraph. It should be bold and blue.</p>
+        <p>This is the second paragraph. It should have normal styling.</p>
+    </div>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+    </ul>
+    <a href="#">Hover over this link</a>
+    <br><br>
+    <input type="text" placeholder="Focus on me to change border color">
+</body>
+</html>
+
+<!-- Explanation: -->
+ 
+<!-- Hover Pseudo-class: When you hover over the link, the text color changes to red.
+
+css
+Copy code
+a:hover {
+    color: red;
+}
+First-child Pseudo-class: The first paragraph inside the .container class is styled to be bold and blue.
+
+css
+Copy code
+.container p:first-child {
+    font-weight: bold;
+    color: blue;
+}
+Nth-child Pseudo-class: Every odd item in the list is given a light gray background.
+
+css
+Copy code
+ul li:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+Focus Pseudo-class: When the input field is focused, the border color changes to green and the outline is removed.
+
+css
+Copy code
+input:focus {
+    border-color: green;
+    outline: none;
+}
+
+
+
+
+
+ -->
