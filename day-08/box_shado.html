@@ -1,0 +1,138 @@
+<!-- box shado -->
+
+<!-- it add shado effect around the element frame -->
+
+<!-- syntax -->
+
+<!-- box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius] [color];-->
+
+
+<!-- example -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      background-color: lightblue;
+      display: inline-block;
+      text-align: center;
+      line-height: 100px;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: white;
+    }
+    .box1 {
+      box-shadow: 10px 10px 5px grey;
+    }
+    .box2 {
+      box-shadow: -10px -10px 5px grey;
+    }
+    .box3 {
+      box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    .box4 {
+      box-shadow: inset 10px 10px 5px grey;
+    }
+    .box5 {
+      box-shadow: 0 0 15px 5px red;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1">Shadow 1</div>
+  <div class="box box2">Shadow 2</div>
+  <div class="box box3">Shadow 3</div>
+  <div class="box box4">Inset Shadow</div>
+  <div class="box box5">Glow Effect</div>
+</body>
+</html>
+
+
+<!-- Parameters -->
+
+<!-- Horizontal Offset (required): Specifies the horizontal distance of the shadow. Positive values position the
+  shadow to the right, while negative values position it to the left.
+
+Vertical Offset (required): Specifies the vertical distance of the shadow. Positive values position the shadow
+below the element, while negative values position it above.
+
+Blur Radius (optional): Specifies the blur distance. The higher the number, the more blurred the shadow will be. 
+If omitted, the shadow is sharp.
+
+Spread Radius (optional): Specifies the size of the shadow. Positive values increase the size, while negative values 
+decrease it.
+
+Color (optional): Specifies the color of the shadow. If omitted, the default color is the current color of the text
+(inherit). -->
+
+
+
+<!-- Explanation of above code -->
+
+<!-- Basic Shadow:
+
+Class .box1:
+
+.box1 {
+  box-shadow: 10px 10px 5px grey;
+}
+This creates a shadow 10px to the right and 10px below the element, with a blur radius of 5px.
+Negative Offsets: -->
+
+<!-- Class .box2:
+
+.box2 {
+  box-shadow: -10px -10px 5px grey;
+}
+This creates a shadow 10px to the left and 10px above the element, with a blur radius of 5px.
+Spread Radius and RGBA Color: -->
+
+<!-- Class .box3:
+
+.box3 {
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+This creates a shadow 10px to the right and 10px below, with a blur radius of 5px, a spread radius of 5px, and a semi-transparent black color.
+Inset Shadow: -->
+
+<!-- Class .box4:
+
+.box4 {
+  box-shadow: inset 10px 10px 5px grey;
+}
+This creates an inset shadow (inside the element) 10px to the right and 10px below, with a blur radius of 5px.
+Glow Effect: -->
+
+ <!-- Class .box5:
+
+.box5 {
+  box-shadow: 0 0 15px 5px red;
+} 
+This creates a glow effect around the element with a blur radius of 15px and a spread radius of 5px.
+Multiple Shadows -->
+
+
+<!-- we can also apply multiple shadows to an element by separating each shadow definition with a comma:
+
+
+.box {
+  box-shadow: 10px 10px 5px grey, -10px -10px 5px lightgrey;
+} -->
+<!-- In this example, the element will have two shadows: one 10px to the right and 10px below with a grey color, and
+ another 10px to the left and 10px above with a light grey color. -->
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+ <!-- css-transform 
+
+this property let us to rotate,scale,skew or tarnslate and html elment  -->
+
+<!-- Transform Functions -->
+
+<!-- Here are the primary transform functions we can use with the transform property: -->
+
+<!-- translate(): Moves an element from its current position. 
+
+translate(x, y): Translates the element by x (horizontal) and y (vertical).
+Example: transform: translate(50px, 100px);
+rotate(): Rotates an element around a fixed point.
+
+rotate(angle): Rotates the element by the specified angle.
+Example: transform: rotate(45deg);
+scale(): Resizes an element.
+
+scale(x, y): Scales the element by x (horizontal) and y (vertical). If only one value is provided, it scales uniformly.
+Example: transform: scale(2, 1.5); (doubles width, increases height by 1.5 times)
+skew(): Skews an element along the x and/or y axis.
+
+skew(x-angle, y-angle): Skews the element by the specified angles.
+Example: transform: skew(30deg, 20deg);
+matrix(): Defines a 2D transformation using a matrix of six values.
+
+matrix(a, b, c, d, e, f): Combines all 2D transform functions into one.
+Example: transform: matrix(1, 0.5, -0.5, 1, 0, 0); -->
+
+<!-- Combining Transform Functions -->
+
+<!-- we can apply multiple transformations to an element by combining transform functions in a single transform 
+ property. -->
+
+<!-- Example:
+transform: translate(50px, 100px) rotate(45deg) scale(1.5) skew(30deg); -->
+
+
+
+<!-- practical implementation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transform Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 50px;
+      transition: transform 0.5s ease;
+    }
+
+    .box:hover {
+      transform: translate(50px, 50px) rotate(45deg) scale(1.2) skew(10deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+<!-- Explanation -->
+
+<!-- Normal State:
+
+The .box element starts with a width of 100px, height of 100px, and a light blue background color.
+Hover State:
+
+When the .box is hovered over, it is translated 50px to the right and 50px down, rotated by 45 degrees, scaled up by 1.2 times, and skewed by 10 degrees.
+Transition: -->
+
+<!-- The transition property ensures that the transformations happen smoothly over 0.5 seconds. -->
+
+<!-- Additional Transform Functions -->
+
+<!-- translateX(x): Moves the element horizontally. 
+transform: translateX(50px); -->
+
+<!-- translateY(y): Moves the element vertically.
+transform: translateY(50px); -->
+
+<!-- scaleX(x): Scales the element horizontally.
+transform: scaleX(2); -->
+
+<!-- scaleY(y): Scales the element vertically.
+transform: scaleY(1.5); -->
+
+<!-- skewX(angle): Skews the element along the x-axis.
+transform: skewX(30deg); -->
+
+<!-- skewY(angle): Skews the element along the y-axis.
+transform: skewY(20deg); -->
+
+<!-- By using the transform property, you can create dynamic and visually appealing effects that enhance the user 
+experience on your web pages. -->
+
+
+
+
+
+
+
+
+
+

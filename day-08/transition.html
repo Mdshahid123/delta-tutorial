@@ -1,0 +1,105 @@
+<!-- transition property -it enable us to define the some intermediate state between two state of an element.
+
+transition" refers to the gradual change from one state or style to another over a specified duration. 
+Transitions are used to create smooth animations when CSS property values change, enhancing the visual 
+experience on web pages by avoiding abrupt or instantnius changes and making the interactions more
+engaging and dynamic.
+
+firstly we have to define a final states of an given element then we will apply 
+transition property -->
+
+
+<!-- Key Concepts of CSS Transitions -->
+
+<!-- transition-property: 
+
+A transition occurs when a CSS property changes its value. For example, changing the background color or 
+size of an element. -->
+
+<!-- transition-duration:
+
+The time it takes for the transition to complete. This is usually specified in seconds (s) 
+or milliseconds (ms). -->
+
+<!-- transition-timing-function:
+
+Describes how the intermediate states of the transition are calculated. Common timing functions include
+ease, linear, ease-in, ease-out, and ease-in-out. -->
+
+<!-- transition-delay:
+
+The time to wait before the transition starts. Like duration, this is specified in seconds or 
+milliseconds. -->
+
+
+<!-- shorthand -->
+ transition:property name duration timing function delay
+
+<!-- practical example -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Transition Example</title>
+  <style>
+    /* intial state */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      transition: background-color 0.5s ease 2s, width 0.5s ease 3s;/* shorthand property*/
+    }
+
+    /* final state */
+
+    .box:hover {
+      background-color: lightcoral;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+
+<!-- Explanation -->
+
+<!-- Normal State: -->
+
+<!-- The .box element starts with a width of 100px, height of 100px, and a light blue background color.
+
+Transition Definition:
+
+The transition property on the .box element specifies that changes to the background-color and width
+properties should transition over 0.5 seconds using the ease timing function.
+
+Hover State:
+
+When the .box is hovered over, its background color changes to light coral, and its width increases to 200px.
+Smooth Change:
+
+Instead of the changes happening instantaneously, the transition creates a smooth animation over the specified 
+duration (0.5 seconds in this case). -->
+
+
+<!-- Timing Function Examples -->
+
+<!-- linear: The transition progresses at a constant speed.
+transition-timing-function: linear;
+
+ease: The transition starts slowly, speeds up in the middle, and slows down at the end (default).
+transition-timing-function: ease;
+
+ease-in: The transition starts slowly and speeds up.
+transition-timing-function: ease-in;
+
+ease-out: The transition starts quickly and slows down.
+transition-timing-function: ease-out;
+
+ease-in-out: The transition starts and ends slowly, with a speed-up in the middle.
+transition-timing-function: ease-in-out; -->
+

@@ -1,0 +1,139 @@
+<!-- css postioned property-by using css postioned property we can set the  final  position or location 
+ of an element in  the html document. -->
+
+<!-- top/right/bottom and left property determined the final location of element in the document
+with respect to the static, relative, absolute, fixed, or sticky method. -->
+
+ 
+<!-- static -->
+
+<!-- This is the default value.
+it maintain the normal document flow
+The element is positioned according to the normal flow of the document.
+top, right, bottom, and left properties have no effect. -->
+
+<!-- .static {
+    position: static;
+  } -->
+
+
+
+  <!-- relative: -->
+
+  <!-- The element is positioned relative to its normal position in any where in document
+       it is also maintain the normal document flow
+
+  top, right, bottom, and left properties will offset it from its normal position.
+   -->
+
+  <!-- .relative {
+    position: relative;
+    top: 10px; /* Moves the element down by 10px */
+    left: 20px; /* Moves the element to the right by 20px */
+  } -->
+
+
+  <!-- absolute: -->
+
+  <!-- The element is removed from normal document flow and positioned relative to 
+   its nearest positioned ancestor (an ancestor with a position 
+  value other than static). -->
+
+  <!-- If there are no positioned ancestors, it uses the document body, and moves along with page
+    scrolling.
+    top, right, bottom, and left properties are used to position the element
+   -->
+
+   <!-- .absolute {
+    position: absolute;
+    top: 50px; /* Positions the element 50px from the top of the nearest positioned ancestor */
+    left: 100px; /* Positions the element 100px from the left of the nearest positioned ancestor */
+  }
+   -->
+
+   <!-- fixed: -->
+
+   <!-- The element is removed from the document flow and positioned relative to the viewport,
+    which means it stays in the same place even. if the page is scrolled.
+
+   top, right, bottom, and left properties are used to position the element. -->
+
+   <!-- .fixed {
+    position: fixed;
+    top: 0;
+    right: 0; /* Positions the element at the top-right corner of the viewport */
+  } -->
+
+
+  <!-- sticky: -->
+
+  <!-- The element is retined in document flow and positioned based on the user's scroll position.
+
+     It toggles between relative and fixed, depending on the scroll position.
+
+    It is positioned relative until a given offset position is met in the viewport, then it 
+
+    "sticks" in place (like position:fixed). -->
+
+
+  <!-- .sticky {
+    position: sticky;
+    top: 0; /* The element will stick to the top of the viewport when you reach its scroll position */
+  }
+   -->
+
+
+<!-- implementaion -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+    }
+    .static {
+      position: static;
+      background-color: lightblue;
+    }
+    .relative {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      background-color: lightgreen;
+    }
+    .absolute {
+      position: absolute;
+      top: 50px;
+      left: 150px;
+      background-color: lightcoral;
+    }
+    .fixed {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: lightgoldenrodyellow;
+    }
+    .sticky {
+      position: sticky;
+      top: 0;
+      background-color: lightpink;
+    }
+  </style>
+</head>
+<body>
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+  <div class="box absolute">Absolute</div>
+  <div class="box fixed">Fixed</div>
+  <div class="box sticky">Sticky</div>
+  <div style="height: 2000px;">Scroll to see the sticky and fixed elements in action.</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!-- Rotate -->
+
+<!-- Purpose: The rotate function is used to rotate an element around a fixed point, typically the center of the 
+ element.
+
+Syntax: rotate(angle), where angle is the degree of rotation.
+
+Behavior: The entire element rotates clockwise or counterclockwise by the specified angle.
+
+Use Case: Commonly used for creating rotations for images, icons, or any element that requires a turning effect. -->
+
+<!-- example
+
+.element {
+    transform: rotate(45deg); /* Rotates the element 45 degrees clockwise */
+  }
+   -->
+
+
+<!-- skew- Slants the element along the x-axis, y-axis, or both. -->
+
+<!-- Syntax:
+skew(x-angle, y-angle) for skewing both horizontally and vertically.
+skewX(x-angle) for skewing horizontally.
+skewY(y-angle) for skewing vertically. -->
+
+<!-- example.
+element {
+    transform: skew(20deg, 10deg); /* Skews the element 20 degrees along the x-axis and 10 degrees along the y-axis */
+  }
+   -->
+
+   <!-- practical example -->
+
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate vs Skew</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      margin: 50px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: white;
+    }
+    .rotate {
+      transform: rotate(45deg);
+    }
+    .skew {
+      transform: skew(20deg, 10deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box rotate">Rotate</div>
+    <div class="box skew">Skew</div>
+  </div>
+</body>
+</html>
+
