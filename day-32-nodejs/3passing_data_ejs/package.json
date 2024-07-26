@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "name": "3passing_data_ejs",
+  "version": "1.0.0",
+  "description": "this is just for  understing a how to passed data in ejs ",
+  "main": "passing_data_to_ejs.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "md shahid",
+  "license": "ISC"
+}

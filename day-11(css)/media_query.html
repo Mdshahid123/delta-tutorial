@@ -1,0 +1,190 @@
+<!-- Media queries are a feature of CSS that allow you to apply css style based on the characteristics of the device 
+ or viewport, such as its width, height, orientation, and resolution. This is essential for creating responsive web 
+designs that adapt to different screen sizes and devices. -->
+
+<!-- The basic syntax of a media query includes the @media rule followed by a media type and one or more expressions
+that check for the conditions. -->
+
+<!-- @media media-type and (condition) {
+    /* CSS rules */
+  }
+   -->
+
+
+   <!-- Media Types -->
+
+   <!-- The most commonly used media type is screen, but there are others like print, all, and speech. -->
+
+
+   <!-- common Media Features -->
+    
+   <!-- Width and Height:
+   
+     -> min-width, max-width
+     ->min-height, max-height
+      -->
+   <!-- Orientation:
+   
+     ->orientation: portrait
+     ->orientation: landscape
+    -->
+    <!-- Resolution:
+   
+       min-resolution
+       max-resolution
+    -->
+
+    <!-- Examples -->
+
+    <!-- Responsive Design with Breakpoints
+    A common practice is to use breakpoints to apply different styles at various viewport widths. -->
+
+     <!-- Default styles for mobile first 
+    body {
+  background-color: lightblue;
+} -->
+
+ <!-- Tablet styles 
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+} -->
+
+  <!-- Desktop styles 
+  @media screen and (min-width: 1024px) {
+  body {
+    background-color: lightcoral;
+  }
+} -->
+
+<!-- In this example:
+
+Mobile devices (less than 600px) will have a light blue background.
+Tablets (600px and above) will have a light green background.
+Desktops (1024px and above) will have a light coral background. -->
+
+<!-- Orientation -->
+
+<!-- Applying styles based on the device orientation. -->
+
+ <!-- Portrait orientation  -->
+
+<!-- @media screen and (orientation: portrait) {
+  body {
+    background-color: lightyellow;
+  }
+} -->
+
+<!-- Landscape orientation -->
+
+<!-- @media screen and (orientation: landscape) {
+  body {
+    background-color: lightpink;
+  }
+} -->
+
+<!-- in this example:
+
+Devices in portrait mode will have a light yellow background.
+Devices in landscape mode will have a light pink background. -->
+
+
+<!-- High-Resolution Displays -->
+
+<!-- Applying styles for high-resolution displays (e.g., Retina displays). -->
+
+<!-- @media screen and (min-resolution: 2dppx) {
+    body {
+      background-image: url('high-res-background.png');
+    }
+  }
+   -->
+
+
+   <!-- Combining Multiple Conditions -->
+
+   <!-- we can combine multiple conditions using logical operators and, or, and not.
+    -->
+   
+   <!-- @media screen and (min-width: 600px) and (max-width: 1024px) {
+     body {
+       background-color: lightgray;
+     }
+   }
+   
+   @media not all and (max-width: 600px) {
+     body {
+       background-color: lightgoldenrodyellow;
+     }
+   } -->
+   <!-- In this example: -->
+   
+   <!-- The first media query applies styles to devices with widths between 600px and 1024px.
+   The second media query applies styles to devices with widths greater than 600px -->
+
+   <!-- Example Project -->
+<!-- Here's a simple example to demonstrate responsive design using media queries: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background-color 0.5s;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #333;
+    }
+
+    @media screen and (max-width: 599px) {
+      body {
+        background-color: lightblue;
+      }
+
+      .container {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1023px) {
+      body {
+        background-color: lightgreen;
+      }
+
+      .container {
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      body {
+        background-color: lightcoral;
+      }
+
+      .container {
+        font-size: 24px;
+      }
+    }
+  </style>
+  <title>Responsive Design with Media Queries</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive Design</h1>
+    <p>Resize the browser window to see the effect!</p>
+  </div>
+</body>
+</html>

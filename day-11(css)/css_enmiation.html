@@ -1,0 +1,48 @@
+<!-- css enimation -->
+
+<!-- to enimate the css element -->
+
+<!-- @keyframe enimation_name{
+    
+    from{font-size:20px}//starting state
+    to{fontt-size:50px;}//final  state
+} -->
+
+<!-- practical-implementaion -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: fontanimation;
+            animation-duration: 3s;
+            animation-timing-function: ease-in;
+            animation-delay: 4s;
+            animation-iteration-count:infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes fontanimation{
+            from{
+                width: 30px;
+            }
+            to{
+                width: 1000px;
+            }
+        }
+    </style>
+    <title>enimation</title>
+</head>
+<body>
+       <h1>enimation</h1>
+       <div>
+            hell;
+       </div>
+</body>
+</html>

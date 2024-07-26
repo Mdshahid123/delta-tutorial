@@ -1,0 +1,101 @@
+<!-- CSS Grid: -->
+
+
+<!-- Designed for two-dimensional layout.
+
+Handles both rows and columns simultaneously.
+
+Ideal for complex layouts where we need precise control over both dimensions. -->
+
+
+<!-- Basic Grid Setup -->
+
+<!-- 1) Defining a Grid Container 
+
+To create a grid container, we have to  set the display property to grid or inline-grid.
+
+.container {
+  display: grid;
+} -->
+
+
+<!-- 2. Defining Columns and Rows
+
+grid-template-columns and grid-template-rows
+These properties define the number and size of columns and rows.
+
+
+.container {
+  grid-template-columns: 100px 1fr 2fr; /* Three columns: fixed, flexible, and double flexible */
+  grid-template-rows: auto 200px; /* Two rows: auto height and fixed height */
+} -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container{
+            width:1000px;
+            height:500px;
+            background-color: greenyellow;
+            display: grid; 
+        }
+         div{
+             width:50px;
+             height:50px;
+             background-color: brown;
+        } 
+    </style>
+    <title>grid-css</title>
+</head>
+<body>
+        <div class="container">
+                <div>
+                
+               </div>
+               <div>
+
+               </div>
+               <div>
+
+               </div>
+               <div>
+
+               </div>
+               <div>
+
+               </div>
+               <div>
+
+               </div>
+               <div>
+                
+               </div>
+               <div>
+
+               </div>
+               <div>
+
+               </div>
+               <div>
+
+               </div>
+               <div>
+
+               </div>
+               <div>
+
+               </div> 
+        </div>
+               
+</body>
+</html>
+<!-- note-when we set the container grid then by default it make no of equal size horigontal rows with in a 
+ container  -->
+
+ <!-- so each indivisual grid items  in a container placed each rows of a container
+   so if gread items is more than the grid rows then rest itmes is outside the grid container -->
+

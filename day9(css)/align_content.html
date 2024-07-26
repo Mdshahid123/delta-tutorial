@@ -1,0 +1,62 @@
+<!-- align-content: Aligns flex lines when there is extra space in the cross axis. -->
+
+<!-- .container {
+    align-content: stretch; /* default */
+    /* other values: flex-start, flex-end, center, space-between, space-around */
+  } -->
+  
+
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+          
+            .container  div:nth-child(odd){
+                  background-color: blueviolet;
+                  color:white;
+                  width:200px;
+                  height:200px;
+              }
+              .container  div:nth-child(even){
+                  background-color:yellow;
+                  color:white;
+                  width:200px;
+                  height:200px;
+              }
+              .container{
+                  background-color: blue;
+                  height:700px;
+                  width:802px;
+                  display:flex;
+                  flex-wrap: wrap;
+                  /* align-content: flex-end;  */
+                  /* align-content: flex-start; */
+                   /* align-content: space-between;*/
+                   /* align-content: space-around; */
+                   /* align-content: space-evenly; */
+                   /* align-content: stretch; */
+
+                  
+                  
+              }
+          
+      </style>
+      <title>align-content</title>
+  </head>
+  <body>
+      <div class="container">
+      
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+         <div>4</div>
+         <div>5</div>
+         <div>6</div>
+         <div>7</div>
+         <div>8</div>
+      </div>
+  </body>
+  </html>

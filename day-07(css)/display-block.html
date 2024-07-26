@@ -1,7 +1,7 @@
 <!-- display-block-it take full space available in width  and leaves newline before and after the
   element -->
 
-<!-- size of parent is grow with sixe of child elment is grow .i.e child element is always grow 
+<!-- size of parent is grow as the size  of child elment is grow .i.e child element is always grow 
 within the parent  element -->
 
 <!-- when we set the margin vertically then it will be set b/w child element and outside the parent
@@ -17,24 +17,37 @@ when we set he margin horigontally then it will be set b/w child element and par
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .inline-box {
+        .inner-box_one {
             display:block ;
             padding: 10px;
-            border: 2px solid blue;
-            margin: 5px;
+            /* border: 2px solid blue; */
+            /* margin: 5px; */
             height:50px;
             width:50px;
             background-color: lightgray;
+        }
+        .inner-box_two {
+            display:block ;
+            padding: 10px; 
+            /* border: 2px solid blue; */
+            /* margin: 5px; */
+            height:50px;
+            width:50px;
+            background-color: green;
         }
         #outer{
             
             background-color: yellow;
         }
+        #outer div{
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div id="outer">
-       <div class="inline-box">Box 1</div>
+       <div class="inner-box_one">Box 1</div>
+       <div class="inner-box_two">Box 1</div>
        
     </div>
 

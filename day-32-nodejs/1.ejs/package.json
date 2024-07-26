@@ -1,0 +1,15 @@
+{
+  "name": "1.ejs",
+  "version": "1.0.0",
+  "description": "this project is about embedded java script",
+  "main": "what_is_templating.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "md shahid",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}

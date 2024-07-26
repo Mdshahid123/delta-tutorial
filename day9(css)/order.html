@@ -1,0 +1,82 @@
+<!-- order: Controls the order in which flex items appear in the flex container. -->
+
+<!-- it is applied on items -->
+
+<!-- .container {
+    align-content: stretch; /* default */
+    /* other values: flex-start, flex-end, center, space-between, space-around */
+  } -->
+
+   <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+          
+            .container  div:nth-child(odd){
+                  background-color: blueviolet;
+                  color:white;
+                  width:200px;
+                  height:200px;
+              }
+              .container  div:nth-child(even){
+                  background-color:yellow;
+                  color:white;
+                  width:200px;
+                  height:200px;
+              }
+              .container{
+                  background-color: blue;
+                  height:700px;
+                  width:802px;
+                  display:flex;
+                
+                  
+                  
+              }
+              #two{
+                order:3; 
+              }
+              #one{
+                order:8; 
+              }
+              #three{
+                order:4; 
+              }
+              #four{
+                order:1; 
+              }
+              #five{
+                order:7; 
+              }
+              #six{
+                order:2; 
+              }
+              #seven{
+                order:5; 
+              }
+              #eight{
+                     order: 6;
+              }
+
+           
+      </style>
+      <title>order</title>
+  </head>
+  <body>
+      <div class="container">
+      
+         <div id="one">1</div>
+         <div id="two">2</div>
+         <div id="three">3</div>
+         <div id="four">4</div>
+         <div id="five">5</div>
+         <div id="six">6</div>
+         <div id="seven">7</div>
+         <div id="eight">8</div>
+      </div>
+  </body>
+  </html> 
+   
+    

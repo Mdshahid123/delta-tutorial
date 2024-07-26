@@ -1,0 +1,56 @@
+<!-- flex-wrap: Controls whether the flex container is a single-line or multi-line flex container. -->
+ <!-- when we set the flex-wrap property then size of items will be custom size so here itmes may be overflow -->
+
+
+<!-- .container {
+  flex-wrap: nowrap; /* default */
+  /* other values: wrap, wrap-reverse */
+} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+          .container  div:nth-child(odd){
+                background-color: blueviolet;
+                color:white;
+                width:200px;
+                height:200px;
+            }
+            .container  div:nth-child(even){
+                background-color:yellow;
+                color:white;
+                width:200px;
+                height:200px;
+            }
+            .container{
+                background-color: blue;
+                height:700px;
+                width:700px;
+                display: flex;/* itmes will become flex itmes .ie all itmes by deafult align horigontally*/
+                flex-direction:row;
+                /* flex-wrap:nowrap;by deafault */
+                /*flex-wrap: wrap;*//*we can set a custom size to the itmes*/
+                flex-wrap: wrap-reverse;
+            }
+        
+    </style>
+    <title>flex containert</title>
+</head>
+<body>
+    <div class="container">
+    
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+       <div>4</div>
+       <div>5</div>
+       <div>6</div>
+       <div>7</div>
+       <div>8</div>
+    </div>
+</body>
+</html>

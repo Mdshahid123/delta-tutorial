@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+
+}
+.main_box{
+    background-image: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+    
+}
+
+.side-bar{
+    box-shadow: -15px -2px 70px    grey ;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255,255,255, 0.1);
+    position: relative;
+
+}
+#menu{
+        font-size: 40px;
+        font-weight: 500;
+        color: white;
+        margin-left: 5px;
+        position: relative;
+        top: 8px;
+        
+}
+#logo
+ {   
+    position: absolute;
+    font-size:20px ;
+    top: 15px;
+    color: white;
+    
+     
+
+}
+#nav_bar{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+
+    
+}
+#nav_bar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 6px;
+    
+}
+#nav_bar span{
+    color: white;
+    
+    
+}
+#nav_bar ul li{
+    margin-top: 30px;
+}
+.social_media ul {
+     height: 125px;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0px 15px 0px 10px;
+     
+     
+
+
+}
+.social_media ul li{
+    list-style: none;
+}
+
+.social_media ul li a{
+    font-size: 25px;
+    color:white;
+    
+    
+  }
+
+

@@ -1,0 +1,80 @@
+<!-- Aligning the Entire Grid -->
+
+<!-- justify-content: Aligns the entire grid horizontally within the container.
+align-content: Aligns the entire grid vertically within the container.
+place-content: Shorthand for justify-content and align-content. -->
+
+<!-- .container {
+    justify-content: space-between; /* Distribute items evenly with space between */
+    align-content: space-around; /* Distribute items evenly with space around */
+  } -->
+  
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+          .container{
+              width:1000px;
+              height:500px;
+              background-color: greenyellow;
+              display: grid; 
+              grid-template-rows: 200px 200px 100px;
+              grid-template-columns: 100px 100px 100px 100px 100px  ;
+              justify-content:center;
+              align-content: space-between;
+              
+          }
+           div{
+               width:50px;
+               height:50px;
+               background-color: brown;
+          } 
+      </style>
+      <title>alignment_content</title>
+  </head>
+  <body>
+          <div class="container">
+                  <div>
+                  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+                  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+  
+                 </div>
+                 <div>
+  
+                 </div> 
+          </div>
+                 
+  </body>
+  </html>
+  

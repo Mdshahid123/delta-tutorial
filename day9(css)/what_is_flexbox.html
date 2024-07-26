@@ -1,0 +1,71 @@
+<!-- what is fleax box -->
+
+<!-- Flexbox, or Flexible Box Layout, is a CSS layout module designed to help arrange and align items 
+within a container. It provides more efficient ways to lay out, align, and distribute space among items in a
+container, even when their size is unknown or dynamic. -->
+
+
+<!-- Flex Container -->
+
+<!-- To use Flexbox, we need to define a flex container. This is done by setting the display property of a container 
+element to  flex or inline-flex. -->
+
+<!-- example -->
+
+<!-- .container {
+    display: flex;
+  }
+   -->
+
+
+ <!-- Main Axis and Cross Axis -->
+
+   <!-- 
+    Main Axis: Defined by the flex-direction property. It can be horizontal or vertical.
+
+    Cross Axis: Perpendicular to the main axis. -->
+
+<!-- implementation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+          .container  div:nth-child(odd){
+                background-color: blueviolet;
+                color:white;
+                width:500px;
+                height:300px;
+            }
+            .container  div:nth-child(even){
+                background-color:yellow;
+                color:white;
+                width:500px;
+                height: 300px;
+            }
+            .container{
+                background-color: blue;
+                height:700px;
+                width:700px;
+                display: flex;/* itmes will become flex itmes .ie all itmes by deafult align horigontally*/
+                flex-direction: column;
+            }
+        
+    </style>
+    <title>flex containert</title>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>
+
+<!-- note-flex container restrict the overflow of items if we set the size of indiviual items in such ways
+that overall size of all items greater than flex container then it restrict the  overflow -->

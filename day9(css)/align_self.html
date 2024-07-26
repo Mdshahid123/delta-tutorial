@@ -1,0 +1,67 @@
+<!-- align-self: Allows the default alignment (or the one specified by align-items) to be overridden for individual
+  flex items. -->
+
+ <!-- .item {
+    align-self: auto; /* default */
+    /* other values: flex-start, flex-end, center, baseline, stretch */
+  } -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self Example</title>
+    <style>
+      .container {
+        display: flex;
+        height: 200px;
+        border: 1px solid #ccc;
+        align-items: stretch; /* Default for items */
+      }
+      .item {
+        padding: 20px;
+        margin: 10px;
+        background-color: lightblue;
+        text-align: center;
+        font-size: 1rem;
+      }
+      .item1 {
+        align-self: flex-start; /* Align at the start of the cross-axis */
+      }
+      .item2 {
+        align-self: flex-end; /* Align at the end of the cross-axis */
+      }
+      .item3 {
+        align-self: center; /* Align at the center of the cross-axis */
+      }
+      .item4 {
+        align-self: stretch; /* Stretch to fill the container */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">Item 1</div>
+      <div class="item item2">Item 2</div>
+      <div class="item item3">Item 3</div>
+      <div class="item item4">Item 4</div>
+    </div>
+  </body>
+  </html>
+
+  <!-- Explanation -->
+
+  <!-- Container: The flex container is set to display: flex and its items are stretched by default.
+
+  Item 1: align-self: flex-start aligns this item at the start of the cross-axis.
+
+  Item 2: align-self: flex-end aligns this item at the end of the cross-axis.
+
+  Item 3: align-self: center aligns this item at the center of the cross-axis
+  .
+  Item 4: align-self: stretch stretches this item to fill the container.
+
+  This example shows how you can control the alignment of individual flex items within the same container using
+   the align-self property.
+   -->

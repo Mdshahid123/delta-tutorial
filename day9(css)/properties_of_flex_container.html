@@ -1,0 +1,54 @@
+<!-- Properties for the Flex Container -->
+
+<!-- 1)flex-direction: Defines the direction of the main axis (row, row-reverse, column, column-reverse). -->
+
+syntax:
+
+<!-- .container {
+    flex-direction: row; /* default */
+    /* other values: row-reverse, column, column-reverse */
+  }
+   -->
+
+   !DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+           
+             .container  div:nth-child(odd){
+                   background-color: blueviolet;
+                   color:white;
+                   width:500px;
+                   height:300px;
+               }
+               .container  div:nth-child(even){
+                   background-color:yellow;
+                   color:white;
+                   width:500px;
+                   height: 300px;
+               }
+               .container{
+                   background-color: blue;
+                   height:700px;
+                   width:700px;
+                   display: flex;/* itmes will become flex itmes .ie all itmes by deafult align horigontally*/
+                   /* flex-direction: row; */
+                   /* flex-direction: row-reverse; */
+                   /* flex-direction: column; */
+                   flex-direction: column-reverse;
+               }
+           
+       </style>
+       <title>flex containert</title>
+   </head>
+   <body>
+       <div class="container">
+           <div>1</div>
+           <div>2</div>
+           <div>3</div>
+           <div>4</div>
+       </div>
+   </body>
+   </html>  

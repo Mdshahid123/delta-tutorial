@@ -1,0 +1,58 @@
+<!-- flex-grow: Defines how much a flex item will grow relative to the rest of the flex items.
+ -->
+
+<!-- .item {
+    flex-grow: 0; /* default */
+    /* other values: positive integers */
+  }
+   -->
+  <!-- note-item will grow if there is a space in a container  otherwise not grow -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+           
+             .container  div:nth-child(odd){
+                   background-color: blueviolet;
+                   color:white;
+                   width:100px;
+                   height:200px;
+               }
+               .container  div:nth-child(even){
+                   background-color:yellow;
+                   color:white;
+                   width:100px;
+                   height:200px;
+               }
+               .container{
+                   background-color: blue;
+                   height:700px;
+                   width:1000px;
+                   display:flex;
+                   
+                   
+                   
+               }
+               /* #three{
+                flex-grow:3;
+               } */
+           
+       </style>
+       <title>grow-items</title>
+   </head>
+   <body>
+       <div class="container">
+       
+          <div >1</div>
+          <div>2</div>
+          <div id="three">3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+       </div>
+   </body>
+   </html>

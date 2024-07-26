@@ -1,0 +1,74 @@
+<!-- The flex-basis property in Flexbox specifies the initial size of a flex item before any space distribution
+  happens. It defines the default size of an element before the remaining space is distributed based on the flex-grow 
+  and flex-shrink properties. -->
+
+<!-- The flex-basis property can take the following values: -->
+
+<!-- A specific length value (e.g., 20%, 10rem, 200px).
+auto (default): The size is based on the item's content.
+content: The size is based on the content's intrinsic size. -->
+
+<!-- Syntax
+.item {
+  flex-basis: <length> | auto | content;
+} -->
+
+<!-- Default Behavior
+When flex-basis is not explicitly set, its default value is auto. This means the flex item will size itself 
+according to its width or height properties, if specified, or based on its content otherwise.
+ -->
+
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Flex Basis Example</title>
+     <style>
+       .container {
+         display: flex;
+         height: 300px;
+         border: 1px solid #ccc;
+       }
+       .item {
+         padding: 20px;
+         margin: 10px;
+         background-color: lightblue;
+         text-align: center;
+         font-size: 1rem;
+       }
+       .item1 {
+         flex-basis: 200px; /* Initial size set to 200px */
+       }
+       .item2 {
+         flex-basis: 100px; /* Initial size set to 100px */
+       }
+       .item3 {
+         flex-basis: auto; /* Initial size based on content */
+       }
+       .item4 {
+         flex-basis: content; /* Initial size based on intrinsic content size */
+       }
+     </style>
+   </head>
+   <body>
+     <div class="container">
+       <div class="item item1">Item 1 (200px)</div>
+       <div class="item item2">Item 2 (100px)</div>
+       <div class="item item3">Item 3 (auto)</div>
+       <div class="item item4">Item 4 (content)</div>
+     </div>
+   </body>
+   </html>
+
+
+   <!-- explanation  -->
+
+   <!-- Container: The flex container is set to display: flex.
+
+   Item 1: flex-basis: 200px; sets the initial size of this item to 200px.
+   Item 2: flex-basis: 100px; sets the initial size of this item to 100px.
+   Item 3: flex-basis: auto; sets the initial size based on the item's content (default behavior).
+   Item 4: flex-basis: content; sets the initial size based on the intrinsic size of the content.
+    -->

@@ -1,0 +1,59 @@
+<!-- flex-shrink: Defines how much a flex item will shrink relative to the rest of the flex items. -->
+
+<!-- note-The flex-shrink property is used to specify how much a flex item should shrink relative to the rest of the 
+ flex items when there is not enough space in the flex container. -->
+
+<!-- .item {
+  flex-shrink: 1; /* default */
+  /* other values: positive integers */
+} -->
+
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <style>
+           
+             .container  div:nth-child(odd){
+                   background-color: blueviolet;
+                   color:white;
+                   width:200px;
+                   height:200px;
+               }
+               .container  div:nth-child(even){
+                   background-color:yellow;
+                   color:white;
+                   width:200px;
+                   height:200px;
+               }
+               .container{
+                   background-color: blue;
+                   height:700px;
+                   width:800px;
+                   display:flex;
+                   
+                   
+                   
+               }
+                  #three{
+                flex-shrink:2;
+               }  
+            
+       </style>
+       <title>flex-shrink</title>
+   </head>
+   <body>
+       <div class="container">
+       
+          <div >1</div>
+          <div>2</div>
+          <div id="three">3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+       </div>
+   </body>
+   </html>
