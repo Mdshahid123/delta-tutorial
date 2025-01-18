@@ -27,13 +27,12 @@ Delta-Tutorial/
 ## Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/delta-tutorial.git
+   git clone https://github.com/Mdshahid123/delta-tutorial.git
    ```
 2. Navigate to the desired day's folder to access notes and examples:
    ```bash
    cd delta-tutorial/Day1
-   ```
-3. Open the `notes.md` file for detailed explanations and run the code examples as required.
+   ``
 
 ## Contributions
 While this repository is primarily for personal use, contributions are welcome to improve structure, provide additional examples, or suggest best practices.
